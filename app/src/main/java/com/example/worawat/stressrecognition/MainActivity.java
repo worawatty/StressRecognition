@@ -22,6 +22,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+//edit this activity for stress recognition
+
 public class MainActivity extends AppCompatActivity implements QuestionFragment.OnFragmentInteractionListener, View.OnClickListener, UpdateSASScore.AsyncResponseScore {
     ArrayList<String[]> questions;
     ArrayList<int[]> answer;
