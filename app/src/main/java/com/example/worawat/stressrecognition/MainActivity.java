@@ -23,6 +23,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 //edit this activity for stress recognition
+//10.18 Edit from Lab
 
 
 public class MainActivity extends AppCompatActivity implements QuestionFragment.OnFragmentInteractionListener, View.OnClickListener, UpdateSASScore.AsyncResponseScore {
