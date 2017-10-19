@@ -6,9 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
-
-
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -16,19 +14,19 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.worawat.stressrecognition.MainActivity" />
-        <activity android:name="com.example.worawat.stressrecognition.StartService"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".StartService" />
 
         <service
-            android:name="com.example.worawat.stressrecognition.MonitorIntentService"
+            android:name=".MonitorIntentService"
             android:exported="false" />
         <service
-            android:name="com.example.worawat.stressrecognition.MonitorService"
+            android:name=".MonitorService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name="com.example.worawat.stressrecognition.LoginActivity"></activity>
-        <activity android:name="com.example.worawat.stressrecognition.CreateAccountActivity">
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CreateAccountActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,12 +35,26 @@
         </activity>
 
         <service
-            android:name="com.example.worawat.stressrecognition.AWSService"
+            android:name=".AWSService"
             android:enabled="true"
-            android:exported="true"></service>
-        <receiver
-            android:name="com.example.worawat.stressrecognition.Alarm"
-            />
+            android:exported="true" />
+
+        <receiver android:name=".Alarm" />
+
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
+
+        <activity
+            android:name="com.model.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@android:style/Theme.DeviceDefault.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
