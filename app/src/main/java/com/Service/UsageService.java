@@ -37,8 +37,8 @@ public class UsageService extends Service implements SensorEventListener{
         AlarmManager am =(AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
         Intent i = new Intent(context, Alarm.class);
         PendingIntent pi = PendingIntent.getBroadcast(context, 0, i, 0);
-        Calendar cal = Calendar.getInstance();
-        cal.setTimeInMillis(System.currentTimeMillis());
+        //Calendar cal = Calendar.getInstance();
+        //cal.setTimeInMillis(System.currentTimeMillis());
         //am.setInexactRepeating(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis()+1000*10,pi); // Millisec * Second * Minute
         am.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,SYNC_INTERVAL, SYNC_INTERVAL,pi);
         Log.i("Alarm set:","TRUE");
