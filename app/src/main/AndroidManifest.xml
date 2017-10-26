@@ -27,11 +27,7 @@
 
         <activity android:name=".LoginActivity" />
         <activity android:name=".CreateAccountActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            
         </activity>
 
         <service
@@ -45,29 +41,24 @@
             android:name="com.google.android.wearable"
             android:required="false" />
 
-        <activity
-            android:name="com.model.Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@android:style/Theme.DeviceDefault.Light">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
         <service
             android:name="com.Service.UsageService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity
-            android:name="com.activity.OverallActivity"
-            android:label="@string/title_activity_overall" />
+
         <activity
             android:name="com.activity.TopActivity"
             android:label="@string/title_activity_top"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
