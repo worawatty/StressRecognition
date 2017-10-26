@@ -63,7 +63,11 @@
 
         <activity
             android:name="com.activity.OverallActivity"
-            android:label="@string/title_activity_overall"></activity>
+            android:label="@string/title_activity_overall" />
+        <activity
+            android:name="com.activity.TopActivity"
+            android:label="@string/title_activity_top"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
