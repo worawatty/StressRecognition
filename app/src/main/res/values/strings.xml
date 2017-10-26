@@ -23,4 +23,8 @@
     <string name="start_date">startDate</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="hello_world">Hello World!</string>
+    <string name="title_activity_overall">OverallActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
