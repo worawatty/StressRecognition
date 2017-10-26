@@ -10,5 +10,8 @@ public class CSVManagement {
     public boolean writeToCSV(ArrayList<String[]> values){
         return true;
     }
-
+    public ArrayList<String[]> readFromCSV(){
+        ArrayList<String[]> results=new ArrayList<>();
+        return results;
+    }
 }
