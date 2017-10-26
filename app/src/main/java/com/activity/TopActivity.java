@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.worawat.stressrecognition.R;
+import com.fragment.Overall;
 
 public class TopActivity extends AppCompatActivity {
 
@@ -136,7 +137,21 @@ public class TopActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+            Fragment resultFragment=null;
+            switch (position){
+                case 0:
+                    resultFragment = Fragment.instantiate(getApplicationContext(), Overall.class.getName());
+                    break;
+                case 1:
+                    resultFragment = Fragment.instantiate(getApplicationContext(), Overall.class.getName());
+                    break;
+                case 2:
+                    resultFragment = Fragment.instantiate(getApplicationContext(), Overall.class.getName());
+                    break;
+            }
+
+            //return PlaceholderFragment.newInstance(position + 1);
+            return resultFragment;
         }
 
         @Override
